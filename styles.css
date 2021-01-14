@@ -1,0 +1,332 @@
+/* Universal Styles */
+
+body {
+    font-family: "Fira Sans", serif;
+    font-style: italic;
+    color: hsla(0, 63%, 3%, 1);
+    background-color: hsla(51, 8%, 75%, 1);
+}
+
+h1 {
+    font-family: "Cormorant-Garamond", serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 3em;
+}
+
+h2 {
+    font-family: "Cormorant-Garamond", serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    width: 75%;
+}
+
+/* Card stylings */
+
+.card-box {
+    display: flex;   
+    justify-content: space-around; 
+    align-items: start;
+}
+
+.card img {
+    border-radius: 6%;
+}
+
+.card {
+    width: 30%;
+    height: 40%;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.card-text {
+    background-color: hsla(77, 21%, 60%, 1);
+    border-radius: 6%;
+    padding: 1rem 1rem 2rem 1rem;
+}
+
+.card-text p {
+    line-height: 1.5em;
+    font-size: 1.25em;
+    padding-bottom: 1.25rem;
+}
+
+.card-text a {
+    text-decoration: none;
+    font-size: 1.25em;
+    color: hsla(0, 63%, 3%, 1);
+    background-color: hsla(30, 86%, 47%, 1);
+    border-radius: 5%;
+    margin-bottom: .75rem;
+    padding: .65rem;
+}
+
+/* header and navigation */
+
+nav {
+    position: fixed;
+    z-index: 5;
+    height: 4rem;
+    width: 100%;
+    background-color: hsla(205, 38%, 68%, 1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-links {
+    display: flex;
+    padding-right: 1rem;
+    
+}
+
+.logo {
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+}
+
+.logo img {
+    width: 2rem;
+    height: auto;
+    padding-top: .25rem;
+}
+
+.logo-text {
+    font-family: "Cormorant-Garamond", serif;
+    font-style: italic;
+    font-size: 3em;
+    padding-right: .1em;
+}
+
+.fix {
+    margin-left: -.25rem;
+}
+  
+.nav-item a {
+    display: inline-block;
+    font-size: 1.5em;
+    font-style: italic;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    color: hsla(0, 63%, 3%, 1);
+}
+
+/* banner and description */
+
+.banner {
+    background-image: url(./tarot-images/neat-cards-tarot.jpg);
+    background-size: cover;
+    height: 40rem;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.banner h1 {
+    width: 50%;
+    background-color :hsla(30, 86%, 47%, 1);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2em;
+    opacity: .90;
+    text-align: right;
+}
+
+.description {
+    font-size: 1.25em;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/* events */
+
+#events h2 {
+    margin: 3rem 0 -2rem 1rem;
+}
+
+/* Readings */
+
+#readings {
+    text-align: center;
+}
+
+.logo-break {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-break img {
+    height: 5rem;
+    width: auto;
+}
+
+.bottom-point {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+
+.bottom-point img {
+    height: 5rem;
+    width: auto;
+}
+
+#readings h2 {
+    margin-top: 4rem;
+    padding-bottom: 1rem;
+}
+
+#readings p {
+    padding-top: 2rem;
+}
+
+#readings a {
+    font-family: "Cormorant-Garamond", serif;
+    font-size: 1.5em;
+    text-decoration: none;
+    color:  hsla(0, 63%, 3%, 1);
+    background-color:  hsla(30, 86%, 47%, 1);
+    padding: .5rem;
+    border-radius: 5%;
+}
+
+.sub-banner {
+    background-image: url(./tarot-images/messy-cards-tarot.jpg);
+    background-size: cover;
+    height: 15rem;
+    width: 100%;
+    margin-top: 2rem;
+}    
+
+/* about */
+
+#about {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#about ul {
+    list-style: inside;
+    margin-top: 1rem;
+}
+
+#about li {
+    padding-top: 1rem;
+}
+
+.about-text {
+    align-self: center;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    background-color: hsla(205, 38%, 68%, 1);
+}
+
+footer p {
+    padding: 0 1rem;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .banner {
+        height: 30rem;
+    }
+
+    .card-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 70%;
+        height: 30%;
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    #events h2 {
+        margin: 4rem 0 1rem 1rem;
+    }
+
+    #readings p {
+        line-height: 1.25em;
+    }
+
+    #about {
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (min-width:585px) and (max-width:710px) {
+    body {
+        font-size: 13px;
+    }
+
+    nav {
+        height: 4.5rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .a {
+        width: 25%;
+        height: 35%;
+        padding: 4rem 0;
+        text-align: center;
+    }
+    
+    .sub-banner {
+        height: 30rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* SCSS HSL 
+laurel-green: hsla(77, 21%, 60%, 1);
+$rust: hsla(15, 78%, 43%, 1);
+$deep-space-sparkle: hsla(200, 26%, 32%, 1);
+$earth-yellow: hsla(34, 55%, 61%, 1);
+$deep-space-sparkle-2: hsla(200, 26%, 32%, 1);
+$coffee: hsla(23, 36%, 35%, 1);
+*/
